@@ -3,6 +3,9 @@ import './App.css';
 import {Home} from './Home';
 import {Imdb} from './Imdb';
 import {Komedi} from './Komedi';
+import { Drama } from "./Drama";
+import { Hindi } from "./Hindi";
+
 import {BrowserRouter, Route, Routes ,NavLink} from 'react-router-dom';
 
 function App() {
@@ -30,6 +33,22 @@ function App() {
               Komedi
             </NavLink>
           </li>
+          <li className="nav-item- m-1">
+              <NavLink
+                className="btn btn-light btn-outline-primary"
+                to="/Drama"
+              >
+                Drama
+              </NavLink>
+            </li>
+            <li className="nav-item- m-1">
+              <NavLink
+                className="btn btn-light btn-outline-primary"
+                to="/Hindi"
+              >
+                Hindi
+              </NavLink>
+            </li>
         </ul>
       </nav>
 
@@ -37,6 +56,8 @@ function App() {
        <Route exact path='/Home' element={<Home/>}/>
         <Route exact path='/Imdb' element={<Imdb/>}/>
         <Route exact path='/Komedi' element={<Komedi/>}/>
+           <Route exact path="/Drama" element={<Drama />} />
+          <Route exact path="/Hindi" element={<Hindi />} />
       </Routes>
     </div>
     </BrowserRouter>
