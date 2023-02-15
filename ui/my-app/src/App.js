@@ -10,6 +10,8 @@ import {Shqip} from './Shqip';
 import {Dokumentar} from './Dokumentar';
 import {Kategoria} from './Kategoria';
 import {Biografia} from './Biografia';
+import { Viti } from "./Viti";
+import { Nordik } from "./Nordik";
 
 
 import {BrowserRouter, Route, Routes ,NavLink} from 'react-router-dom';
@@ -80,6 +82,19 @@ function App() {
             Biografia
             </NavLink>
           </li>
+    <li className="nav-item- m-1">
+              <NavLink className="btn btn-light btn-outline-primary" to="/Viti">
+                Viti
+              </NavLink>
+            </li>
+            <li className="nav-item- m-1">
+              <NavLink
+                className="btn btn-light btn-outline-primary"
+                to="/Nordik"
+              >
+                Nordik
+              </NavLink>
+            </li>
 
         </ul>
       </nav>
@@ -95,6 +110,8 @@ function App() {
         <Route exact path='/Dokumentar' element={<Dokumentar/>}/>
         <Route exact path='/Kategoria' element={<Kategoria/>}/>
         <Route exact path='/Biografia' element={<Biografia/>}/>
+          <Route exact path="/Viti" element={<Viti />} />
+          <Route exact path="/Nordik" element={<Nordik />} />
 
       </Routes>
     </div>
