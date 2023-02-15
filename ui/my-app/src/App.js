@@ -5,6 +5,12 @@ import {Imdb} from './Imdb';
 import {Komedi} from './Komedi';
 import { Drama } from "./Drama";
 import { Hindi } from "./Hindi";
+import {Mafia} from './Mafia';
+import {Shqip} from './Shqip';
+import {Dokumentar} from './Dokumentar';
+import {Kategoria} from './Kategoria';
+import {Biografia} from './Biografia';
+
 
 import {BrowserRouter, Route, Routes ,NavLink} from 'react-router-dom';
 
@@ -49,6 +55,32 @@ function App() {
                 Hindi
               </NavLink>
             </li>
+              <li className="nav-item- m-1">
+            <NavLink className="btn btn-light btn-outline-primary" to="/Mafia">
+              Mafia
+            </NavLink>
+          </li>
+          <li className="nav-item- m-1">
+            <NavLink className="btn btn-light btn-outline-primary" to="/Shqip">
+              Shqip
+            </NavLink>
+          </li>
+          <li className="nav-item- m-1">
+            <NavLink className="btn btn-light btn-outline-primary" to="/Dokumentar">
+            Dokumentar
+            </NavLink>
+          </li>
+          <li className="nav-item- m-1">
+            <NavLink className="btn btn-light btn-outline-primary" to="/Kategoria">
+            Kategoria
+            </NavLink>
+          </li>
+          <li className="nav-item- m-1">
+            <NavLink className="btn btn-light btn-outline-primary" to="/Biografia">
+            Biografia
+            </NavLink>
+          </li>
+
         </ul>
       </nav>
 
@@ -58,6 +90,12 @@ function App() {
         <Route exact path='/Komedi' element={<Komedi/>}/>
            <Route exact path="/Drama" element={<Drama />} />
           <Route exact path="/Hindi" element={<Hindi />} />
+         <Route exact path='/Mafia' element={<Mafia/>}/>
+        <Route exact path='/Shqip' element={<Shqip/>}/>
+        <Route exact path='/Dokumentar' element={<Dokumentar/>}/>
+        <Route exact path='/Kategoria' element={<Kategoria/>}/>
+        <Route exact path='/Biografia' element={<Biografia/>}/>
+
       </Routes>
     </div>
     </BrowserRouter>
