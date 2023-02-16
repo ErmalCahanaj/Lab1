@@ -115,7 +115,7 @@ function App() {
                 Nordik
               </NavLink>
             </li>
-    </li>
+    
             <li className="nav-item- m-1">
               <NavLink
                 className="btn btn-light btn-outline-primary"
@@ -144,7 +144,7 @@ function App() {
         <Route exact path='/Biografia' element={<Biografia/>}/>
           <Route exact path="/Viti" element={<Viti />} />
           <Route exact path="/Nordik" element={<Nordik />} />
-            <Route exact path="/Romance" element={<Romance />}
+            <Route exact path="/Romance" element={<Romance />}/>
             
 
       </Routes>
