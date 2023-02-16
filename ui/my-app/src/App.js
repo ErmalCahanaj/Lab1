@@ -12,6 +12,9 @@ import {Kategoria} from './Kategoria';
 import {Biografia} from './Biografia';
 import { Viti } from "./Viti";
 import { Nordik } from "./Nordik";
+import {Krim} from './Krim';
+import {Netflix} from './Netflix';
+import {Francez} from './Francez';
 
 
 import {BrowserRouter, Route, Routes ,NavLink} from 'react-router-dom';
@@ -57,6 +60,22 @@ function App() {
                 Hindi
               </NavLink>
             </li>
+      <li className="nav-item- m-1">
+            <NavLink className="btn btn-light btn-outline-primary" to="/Netflix">
+              Netflix
+            </NavLink>
+          </li>
+        
+          <li className="nav-item- m-1">
+            <NavLink className="btn btn-light btn-outline-primary" to="/Krim">
+              Krim
+            </NavLink>
+          </li>
+          <li className="nav-item- m-1">
+            <NavLink className="btn btn-light btn-outline-primary" to="/Francez">
+              Francez
+            </NavLink>
+          </li>
               <li className="nav-item- m-1">
             <NavLink className="btn btn-light btn-outline-primary" to="/Mafia">
               Mafia
@@ -103,6 +122,9 @@ function App() {
        <Route exact path='/Home' element={<Home/>}/>
         <Route exact path='/Imdb' element={<Imdb/>}/>
         <Route exact path='/Komedi' element={<Komedi/>}/>
+       <Route exact path='/Netflix' element={<Netflix/>}/>
+        <Route exact path='/Krim' element={<Krim/>}/>
+        <Route exact path='/Francez' element={<Francez/>}/>
            <Route exact path="/Drama" element={<Drama />} />
           <Route exact path="/Hindi" element={<Hindi />} />
          <Route exact path='/Mafia' element={<Mafia/>}/>
@@ -112,6 +134,7 @@ function App() {
         <Route exact path='/Biografia' element={<Biografia/>}/>
           <Route exact path="/Viti" element={<Viti />} />
           <Route exact path="/Nordik" element={<Nordik />} />
+            
 
       </Routes>
     </div>
