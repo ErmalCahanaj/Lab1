@@ -15,6 +15,7 @@ import { Nordik } from "./Nordik";
 import {Krim} from './Krim';
 import {Netflix} from './Netflix';
 import {Francez} from './Francez';
+import {Romance} from './Romance';
 
 
 import {BrowserRouter, Route, Routes ,NavLink} from 'react-router-dom';
@@ -114,6 +115,15 @@ function App() {
                 Nordik
               </NavLink>
             </li>
+    </li>
+            <li className="nav-item- m-1">
+              <NavLink
+                className="btn btn-light btn-outline-primary"
+                to="/Romance"
+              >
+                Romance
+              </NavLink>
+            </li>
 
         </ul>
       </nav>
@@ -134,6 +144,7 @@ function App() {
         <Route exact path='/Biografia' element={<Biografia/>}/>
           <Route exact path="/Viti" element={<Viti />} />
           <Route exact path="/Nordik" element={<Nordik />} />
+            <Route exact path="/Romance" element={<Romance />}
             
 
       </Routes>
